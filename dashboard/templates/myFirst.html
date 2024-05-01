@@ -1,0 +1,23 @@
+<!-- templates/display_data.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <!-- ... other head elements ... -->
+    <script src="{% static 'updateData2.js' %}"></script>
+</head>
+<body>
+    <a href="https://api.icicidirect.com/apiuser/login?api_key=aT33RE8gb1%2962510bO585%238B71E7774g">Login Url to get Session</a>
+    <form>
+        <label for="textInput">Enter Text:</label>
+        <input type="text" id="textInput" name="textInput" required>
+        <button type="button" onclick="setSessionKey()">Submit</button>
+        <button type="button" onclick="fetchDataAndUpdate()">Refresh</button>
+    </form>
+    
+    <h1 id="user-name">temp</h1>
+    <p id="order-details">temp</p>
+    <p id="profit-n-loss">temp</p>
+</body>
+</html>
